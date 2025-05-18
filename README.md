@@ -16,21 +16,19 @@ Original Repo for this model : https://github.com/nari-labs/dia.git
 | Nari-DIA      | Zero-shot   | ❌ Poor        | Lacks Hindi phoneme training       |    Good         |
  
 
-## ✅ Finetuning Attempted using:  
+### ✅ Finetuning Attempted using:  
   - Finetune Refrence Repo : https://github.com/stlohrey/dia-finetuning.git
   - Dataset: `Rishavnine/SYSPIN_Hindi_Male_TTS_Small` HuggingFace Link : https://huggingface.co/datasets/Rishavnine/SYSPIN_Hindi_Male_TTS_Small
   - Platform: Kaggle 
   - Finetuning Scripts at The Finetuning
-  - Checkpoints at results/finetuining-checkpoints
+  - Checkpoints at Checkpoints/finetuining-checkpoints
     
-## 🔊 Results Summary
-
+### 🔊 Results Summary
 | Model         | Type        | Results       | Notes                                 |
 |---------------|-------------|---------------|-------------------------------------- |
 | Nari-DIA      | Finetuned   | ❓ Unknown     | Checkpoint corrupted during transfer |
-
-
-Gradio url not Supported by the Kaggle So checkpoint transfer to the Colab Corrupted not working properly 
+ 
+ ⚠️ Gradio url not Supported by the Kaggle So checkpoint transfer to the Colab Corrupted not working properly 
 
 
 ### 2. Coqui XTTS
@@ -80,7 +78,7 @@ Colab Link at models Microsoft SpeechT5
 - `scripts/`: Code for training & inference
 - `Results/`: Audio samples of each model 
 - `Checkpoints/`: Checkpoints or Every-Save of the Run model.
-- `data/`: Hindi dataset Used for the Finetuning
+- `Data/`: Hindi dataset used for the finetuning.
 
 
 
