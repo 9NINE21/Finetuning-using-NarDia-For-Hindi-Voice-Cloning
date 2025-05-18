@@ -8,9 +8,8 @@ This repository contains experiments and findings from building a Hindi TTS voic
 
 ### 1. Nari-DIA 1.6B 
 Original Repo for this model : https://github.com/nari-labs/dia.git
-
-## ✅ Tested Zero-shot Voice Cloning of Nari-Dia 1.6B using the Custom Voices   
-## Audio at [results/zeroshot_outputs/]
+ ✅ Tested Zero-shot Voice Cloning of Nari-Dia 1.6B using the Custom Voices   
+# Audio at [results/zeroshot_outputs/]
 ## 🔊 Results Summary
 | Model         | Type        | Hindi Quality | Notes                               | English Quality  |
 |---------------|-------------|---------------|-------------------------------------|-----------------|
@@ -79,9 +78,10 @@ Colab Link at models Microsoft SpeechT5
 ## 📁 Project Structure
 - `models/`: Scripts + notes for each model used
 - `scripts/`: Code for training & inference
-- `results/`: Audio samples of each model 
+- `Results/`: Audio samples of each model 
 - `Checkpoints/`: Checkpoints or Every-Save of the Run model.
-- `data/`: Hindi dataset used for the Finetuning
+- `data/`: Hindi dataset Used for the Finetuning
+
 
 
 
