@@ -16,10 +16,10 @@ The initial run will take longer as the Descript Audio Codec also needs to be do
 ## ✅ Tested Zero-shot Voice Cloning of Nari-Dia 1.6B using the Custom Voices   
 ## Results Summary : Audio at [results/zeroshot_outputs/]
 ## 🔊 Results Summary
-| Model         | Type        | Hindi Quality | Notes                               | English Quality |
+| Model         | Type        | Hindi Quality | Notes                               | English Quality  |
 |---------------|-------------|---------------|-------------------------------------|-----------------|
 | Nari-DIA      | Zero-shot   | ❌ Poor        | Lacks Hindi phoneme training       |    Good         |
-| 
+ 
 
 ## ✅ Finetuning Attempted using:  
   - Finetune Refrence Repo : https://github.com/stlohrey/dia-finetuning.git
@@ -30,24 +30,49 @@ The initial run will take longer as the Descript Audio Codec also needs to be do
     
 ## 🔊 Results Summary
 
-| Model         | Type        | Hindi Quality | Notes                                |
-|---------------|-------------|---------------|--------------------------------------|
+| Model         | Type        | Results       | Notes                                 |
+|---------------|-------------|---------------|-------------------------------------- |
 | Nari-DIA      | Finetuned   | ❓ Unknown     | Checkpoint corrupted during transfer |
+-Gradio url not Supported by the Kaggle So checkpoint transfer to the Colab Corrupted not working properly 
 
- -Gradio url not Supported by the Kaggle So checkpoint transfer to the kaggle CheckPoint Corrupted not working properly 
 
 ### 2. Coqui XTTS
 - Original Repo for this model : https://github.com/coqui-ai/TTS.git
 - Documentation information with Finetuning https://docs.coqui.ai/en/latest/models/xtts.html
-- Colab link at models-CoquiXTTS
+- Colab link models-CoquiXTTS
   ## 🔊 Results Summary
 - ✅ Tried running fine-tuning Colab.
 - ❌ Colab Broken (Dependency issues unstable Broken Resources Everywhere)
 - Not usable locally due to hardware limitations (24GB VRAM).
 
+### 3. Microsoft SpeechT5  Results at results/Microsoft SpeechT5 results 
+- ✅ Trained on Datasets : https://huggingface.co/datasets/SayantanJoker/SYSPIN_Hindi_Male_TTS
+- ✅ Added support for Devanagari tokenizer manually 
+- 🔁 Training: 1300 steps run.
+- Colab link at models Microsoft SpeechT5
+ ## 🔊 Results Summary  
+| Model                 | Type        | Results       | Notes                                                     |
+|-----------------------|-------------|---------------|---------------------------------------------------------- |
+| Microsoft SpeechTS    | Finetuned   |  ❌ Poor     |  Custom tokenizer, weak output                             |
+
+## Instead of adding the Custom Tokenizer  added the Romanized Scripts (Colab link at the Models Microsoft SpeechT5)
+## 🔊 Results Summary  
+| Model                 | Type        | Results       | Notes                                                     |
+|-----------------------|-------------|---------------|---------------------------------------------------------- |
+| Microsoft SpeechTS    | Finetuned   |  ❓ Unknown     |  Romanized Support for the Token                        |
+-Trained on the Same Hindi Datasets 
+-Colab Link at ModelS Microsoft SpeechT5
+## 🔊 Results Summary  
+## Using the Nepali Model as Checkpoints instead of the Hindi Datasets results 
+## 🔊 Results Summary  
+| Model                 | Type        | Results       | Notes                                                     |
+|-----------------------|-------------|---------------|---------------------------------------------------------- |
+| Microsoft SpeechTS    | Finetuned   |  ❓ Unknown     | Nepali Checkpoints                                      |
+-Colab Link at ModelS Microsoft SpeechT5
 
 
-  - 
+
+ 
 
 
 
