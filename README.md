@@ -8,13 +8,9 @@ This repository contains experiments and findings from building a Hindi TTS voic
 
 ### 1. Nari-DIA 1.6B 
 Original Repo for this model : https://github.com/nari-labs/dia.git
-## 💻 Hardware and Inference Speed
-
-Dia has been tested on only GPUs (pytorch 2.0+, CUDA 12.6). CPU support is to be added soon.
-The initial run will take longer as the Descript Audio Codec also needs to be downloaded.
 
 ## ✅ Tested Zero-shot Voice Cloning of Nari-Dia 1.6B using the Custom Voices   
-## Results Summary : Audio at [results/zeroshot_outputs/]
+## Audio at [results/zeroshot_outputs/]
 ## 🔊 Results Summary
 | Model         | Type        | Hindi Quality | Notes                               | English Quality  |
 |---------------|-------------|---------------|-------------------------------------|-----------------|
@@ -33,7 +29,9 @@ The initial run will take longer as the Descript Audio Codec also needs to be do
 | Model         | Type        | Results       | Notes                                 |
 |---------------|-------------|---------------|-------------------------------------- |
 | Nari-DIA      | Finetuned   | ❓ Unknown     | Checkpoint corrupted during transfer |
--Gradio url not Supported by the Kaggle So checkpoint transfer to the Colab Corrupted not working properly 
+
+
+Gradio url not Supported by the Kaggle So checkpoint transfer to the Colab Corrupted not working properly 
 
 
 ### 2. Coqui XTTS
@@ -55,20 +53,37 @@ The initial run will take longer as the Descript Audio Codec also needs to be do
 |-----------------------|-------------|---------------|---------------------------------------------------------- |
 | Microsoft SpeechTS    | Finetuned   |  ❌ Poor     |  Custom tokenizer, weak output                             |
 
-## Instead of adding the Custom Tokenizer  added the Romanized Scripts (Colab link at the Models Microsoft SpeechT5)
+
+
+
+## Instead of adding the Custom Tokenizer added the Romanized Scripts (Colab link at the Models Microsoft SpeechT5)
+
 ## 🔊 Results Summary  
 | Model                 | Type        | Results       | Notes                                                     |
 |-----------------------|-------------|---------------|---------------------------------------------------------- |
 | Microsoft SpeechTS    | Finetuned   |  ❓ Unknown     |  Romanized Support for the Token                        |
 -Trained on the Same Hindi Datasets 
--Colab Link at ModelS Microsoft SpeechT5
+-Colab Link at models Microsoft SpeechT5
+
 ## 🔊 Results Summary  
-## Using the Nepali Model as Checkpoints instead of the Hindi Datasets results 
+## Using the Nepali Model as Checkpoints instead of Microsoft.SpeechT5 model as Checkpoints 
 ## 🔊 Results Summary  
 | Model                 | Type        | Results       | Notes                                                     |
 |-----------------------|-------------|---------------|---------------------------------------------------------- |
 | Microsoft SpeechTS    | Finetuned   |  ❓ Unknown     | Nepali Checkpoints                                      |
--Colab Link at ModelS Microsoft SpeechT5
+
+Colab Link at models Microsoft SpeechT5
+
+
+
+## 📁 Project Structure
+- `models/`: Scripts + notes for each model used
+- `scripts/`: Code for training & inference
+- `results/`: Audio samples of each model 
+- `Checkpoints/`: Checkpoints or Every-Save of the Run model.
+- `data/`: Hindi dataset used for the Finetuning
+
+
 
 
 
