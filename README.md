@@ -26,7 +26,13 @@ We will be adding a quantized version in the future.
 
 - ✅ Tested Zero-shot in Hugging Face Space in Hindi synthesis
 - English Voice Cloining by the Refrence Audio and Hindi Voice Cloning  using the Refrence Audio  Results at : [results/zeroshot_outputs/]
-## Results Analysis 
+## Results Summary :
+## 🔊 Results Summary
+
+| Model         | Type        | Hindi Quality | Notes                               | English Quality |
+|---------------|-------------|---------------|-------------------------------------|-----------------|
+| Nari-DIA      | Zero-shot   | ❌ Poor        | Lacks Hindi phoneme training       |    Good         |
+| 
 -English Good
 -Hindi Bad (Reson : Model is not trained in Hindi Language , providing the Romanized Scripts also  dont do the give Proper Results 
 
