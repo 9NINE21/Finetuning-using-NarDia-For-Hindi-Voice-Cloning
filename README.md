@@ -13,8 +13,7 @@ Original Repo for this model : https://github.com/nari-labs/dia.git
 Dia has been tested on only GPUs (pytorch 2.0+, CUDA 12.6). CPU support is to be added soon.
 The initial run will take longer as the Descript Audio Codec also needs to be downloaded.
 
-- ✅ Tested Zero-shot Voice Cloning of Nari-Dia 1.6B using the Custom Voices 
-  
+## ✅ Tested Zero-shot Voice Cloning of Nari-Dia 1.6B using the Custom Voices   
 ## Results Summary : Audio at [results/zeroshot_outputs/]
 ## 🔊 Results Summary
 | Model         | Type        | Hindi Quality | Notes                               | English Quality |
@@ -22,9 +21,33 @@ The initial run will take longer as the Descript Audio Codec also needs to be do
 | Nari-DIA      | Zero-shot   | ❌ Poor        | Lacks Hindi phoneme training       |    Good         |
 | 
 
-- ✅ Finetuning Attempted using:  
+## ✅ Finetuning Attempted using:  
+  - Finetune Refrence Repo : https://github.com/stlohrey/dia-finetuning.git
   - Dataset: `Rishavnine/SYSPIN_Hindi_Male_TTS_Small` HuggingFace Link : https://huggingface.co/datasets/Rishavnine/SYSPIN_Hindi_Male_TTS_Small
-  - Platform: Kaggle (checkpoints saved)
+  - Platform: Kaggle 
+  - Finetuning Scripts at The Finetuning
+  - Checkpoints at results/finetuining-checkpoints
+    
+## 🔊 Results Summary
+
+| Model         | Type        | Hindi Quality | Notes                                |
+|---------------|-------------|---------------|--------------------------------------|
+| Nari-DIA      | Finetuned   | ❓ Unknown     | Checkpoint corrupted during transfer |
+
+ -Gradio url not Supported by the Kaggle So checkpoint transfer to the kaggle CheckPoint Corrupted not working properly 
+
+### 2. Coqui XTTS
+- Original Repo for this model : https://github.com/coqui-ai/TTS.git
+- Documentation information with Finetuning https://docs.coqui.ai/en/latest/models/xtts.html
+- Colab link at models-CoquiXTTS
+  ## 🔊 Results Summary
+- ✅ Tried running fine-tuning Colab.
+- ❌ Colab Broken (Dependency issues unstable Broken Resources Everywhere)
+- Not usable locally due to hardware limitations (24GB VRAM).
+
+
+
+  - 
 
 
 
